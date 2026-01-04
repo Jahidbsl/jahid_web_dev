@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- ======= Header / Navbar ======= -->
@@ -47,9 +49,88 @@
             <a href="#contact" class="btn btn-primary btn-lg mt-4">Get in Touch</a>
         </div>
     </header>
+    <footer class="footer bg-dark text-white position-relative overflow-hidden">
+
+        <!-- Animated Gradient Line -->
+        <div class="footer-glow-line"></div>
+
+        <div class="container py-5 position-relative">
+            <div class="row gy-4 text-center text-md-start">
+
+                <!-- About -->
+                <div class="col-md-4">
+                    <div class="footer-card">
+                        <h4 class="fw-bold footer-title">Jahid Web Dev</h4>
+                        <p class="footer-text">
+                            Crafting modern, high-performance & scalable web solutions using Laravel, React &
+                            cutting-edge UI technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4">
+                    <div class="footer-card text-center d-flex flex-column align-items-center">
+                        <h5 class="fw-bold footer-heading">Contact</h5>
+                        <a href="mailto:jahidhasanbsl46@gmail.com" class="footer-contact">
+                            <i class="fas fa-envelope"></i>
+                            jahidhasanbsl46@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="col-md-4">
+                    <div class="footer-card text-center">
+                        <h5 class="fw-bold footer-heading">Connect With Me</h5>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61553863688292" class="icon facebook" data-tooltip="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jahidhasan-webdev/" class="icon linkedin" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Jahidbsl" class="icon github" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon twitter" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="text-center small footer-bottom-text">
+                © 2024 <strong>Jahid Web Dev</strong> • Designed & Developed with ❤️
+            </div>
+        </div>
+
+        <!-- Scroll To Top -->
+        <button id="scrollTopBtn" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", () => {
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+
 </body>
+
 </html>
-sss
